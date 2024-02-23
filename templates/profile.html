@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Profile Directory</title>
+    </head>
+    <body>
+        <div style="padding: 20px;">
+            <h2>Create Profile</h2>
+            <form method="POST" action="{% url 'profile' %}">
+                {% csrf_token %}
+                <input type="text" name="name" placeholder="Enter your name">
+                <button type="submit">Submit</button>
+            </form>
+            <h2>List of profiles</h2>
+            <ul>
+                {% for stored_name in stored_names %}
+                <h4>Profile info for {{stored_name.name}}</h4>
+                <li>Name: {{stored_name.name}}</li>
+                {% empty %}
+                <li>No names stored yet.</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </body>
+</html>

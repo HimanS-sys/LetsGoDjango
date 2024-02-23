@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+# Profiles - creates object containing
+# user profile details
+class Profile(models.Model):
+    name = models.CharField(max_length=255)
