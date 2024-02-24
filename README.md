@@ -16,5 +16,7 @@ A basic page that:
 ![Screenshot 2024-02-24 001312](https://github.com/HimanS-sys/LetsGoDjango/assets/68765011/261475fe-9388-4ae4-9e29-5124469f4e24)
 
 * updates email (type: `POST`, path: `'profile/{name}/email/'`, returns with message of success/failure)
+  
+![Screenshot 2024-02-24 103158](https://github.com/HimanS-sys/LetsGoDjango/assets/68765011/92d9da80-8551-4c47-a346-21ceb653b1fe)
 
 
